@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reminder</title>
+  <meta name="description" content="Personal reminder base">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.10.2/themes/vue.css">
+  <style>
+    :root {
+      --base-font-size: 16px;
+      --theme-color: rgb(104, 118, 52);
+      --link-color:  rgb(104, 118, 52);
+      --link-color--hover: rgb(137, 152, 100);
+      --sidebar-name-margin: 0;
+      --sidebar-name-padding: 0;
+      --code-font-size: .9em;
+    }
+    .sidebar > h1 {
+      margin-bottom: -.75em;
+      margin-top: .75em;
+    }
+    .markdown-section a code {
+      color: var(--link-color)!important;
+    }
+    .markdown-section code:not([class*="lang-"]):not([class*="language-"]) {
+      white-space: unset
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+<script>
+  window.$docsify = {
+    name: 'Reminder',
+    loadSidebar: true,
+    maxLevel: 3,
+    subMaxLevel: 2,
+    auto2top: true,
+    repo: '',
+    auto2top: true
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4.10.2/lib/docsify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4.10.2/lib/plugins/search.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4.10.2/lib/plugins/ga.min.js"></script>
+
+</html>
